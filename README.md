@@ -1,2 +1,2 @@
 # intro-component
- An introductory component with a sign-up form
+CDDR - Project 1 - An introductory component with a sign-up form
