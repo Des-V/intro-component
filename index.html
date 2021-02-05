@@ -10,40 +10,40 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <div class="wrapper">
+<body id="body" class="body">
+    <div id="wrapper" class="wrapper">
         <div class="header">
-            <h1></h1>
-            <p></p>
+            <h1 id="headerTitle"></h1>
+            <p id="headerText"></p>
         </div>
         <div class="main">
-            <p></p>
+            <p id="promotionText"><span id="promotionTextBold"></span></p>
             <form>
-                <ul>
+                <ul id="formList">
                     <li class="name">
                         <label for="name"></label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" placeholder="First Name" required="required" aria-required="true">
                     </li>
                     <li class="surname">
-                        <input type="text" id="surname" name="surname">
+                        <input type="text" id="surname" name="surname" placeholder="Last Name" required="required" aria-required="true"> 
                     </li>
                     <li class="email">
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required="required" aria-required="true">
                     </li>
                     <li class="password">
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" placeholder="Password" required="required" aria-required="true">
                     </li>
                     <li class="button">
-                        <button type="submit"></button>
+                        <button type="submit" id="buttonClaim"></button>
                     </li>
-                    <li class="terms">
-                        <p></p>
+                    <li id="formTerms" class="terms">
+                        <p id="smallText"><a  alt="Terms and Services link"><span id="smallTextLink"></Span></a></p>
                     </li>
                 </ul>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
