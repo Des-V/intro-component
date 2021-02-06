@@ -14,31 +14,31 @@
 <body id="body" class="body">
     <div id="wrapper" class="wrapper">
         <div class="header">
-            <h1 id="headerTitle"></h1>
-            <p id="headerText"></p>
+            <h1 id="headerTitle" class="headerTitle"></h1>
+            <p id="headerText" class="headerText"></p>
         </div>
         <div class="main">
-            <p id="promotionText"><span id="promotionTextBold"></span></p>
-            <form>
-                <ul id="formList">
-                    <li class="name">
+            <p id="promotionText" class="promotionText"><span id="promotionTextBold"></span></p>
+            <form id="form" class="form">
+                <ul id="formList" class="formList">
+                    <li id="nameList" class="nameList">
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="First Name" required="required" aria-required="true">
+                        <input type="text" id="name" class="name" name="name" placeholder="First Name" required="required" aria-required="true">
                     </li>
-                    <li class="surname">
-                        <input type="text" id="surname" name="surname" placeholder="Last Name" required="required" aria-required="true"> 
+                    <li class="surnameList">
+                        <input type="text" id="surname" class="surname" name="surname" placeholder="Last Name" required="required" aria-required="true"> 
                     </li>
-                    <li class="email">
-                        <input type="email" id="email" name="email" placeholder="Email Address" required="required" aria-required="true">
+                    <li class="emailList">
+                        <input type="email" id="email" class="email" name="email" placeholder="Email Address" required="required" aria-required="true">
                     </li>
-                    <li class="password">
-                        <input type="password" id="password" name="password" placeholder="Password" required="required" aria-required="true">
+                    <li class="passwordList">
+                        <input type="password" id="password" class="password" name="password" placeholder="Password" required="required" aria-required="true">
                     </li>
-                    <li class="button">
-                        <button type="submit" id="buttonClaim"></button>
+                    <li class="buttonList">
+                        <button type="submit" id="buttonClaim" class="buttonClaim"></button>
                     </li>
-                    <li id="formTerms" class="terms">
-                        <p id="smallText"><a  alt="Terms and Services link"><span id="smallTextLink"></Span></a></p>
+                    <li id="formTerms" class="formTermsList">
+                        <p id="smallText" class="smallText"></p>
                     </li>
                 </ul>
             </form>

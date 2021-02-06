@@ -1,0 +1,213 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+body {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    grid-gap: 16;
+}
+
+.header {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-area: 2 / 2 / span 2 / 3;
+    margin: 80px 20px 20px 20px;
+}
+
+.headerTitle {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.headerText {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.main {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-area: 5 / 2 / span 2 / 3;
+    margin: 20px 20px 20px 20px;
+}
+
+.promotionText {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    padding: 15px 65px 15px 65px;
+}
+
+.form {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.formList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.nameList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.name {
+    align-self: center;
+    justify-self: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.surnameList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.surname {
+    align-self: center;
+    justify-self: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.emailList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.email {
+    align-self: center;
+    justify-self: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.passwordList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.password {
+    align-self: center;
+    justify-self: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.buttonList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.buttonClaim {
+    align-self: center;
+    justify-self: center;
+    padding: 20px 45px 20px 45px;
+}
+
+.formTermsList {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.formTerms {
+    align-self: center;
+    justify-self: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.smallText {
+    align-self: center;
+    justify-self: center;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+/* For mobile phones: */
+
+/* Portrait xs */
+@media only screen and (min-width: 360dp) {
+    .body {
+        background-image: 'url(img/bg-intro-mobile)';
+    }
+   
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600dp) {
+    .body {
+        background-image: 'url(img/bg-intro-desktop)';
+        
+    }
+    .wrapper {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(8, auto);
+        grid-gap: 24;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1280dp) {
+    .body {
+        background-image: 'url(img/bg-intro-desktop)';
+        align-items: center;
+    }
+    .wrapper {
+        display: grid;
+        width: 100%;
+        min-height: 200px;
+        grid-template-columns: repeat(12, auto);
+        grid-gap: 24;
+    }
+   
+} 
