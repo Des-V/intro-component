@@ -14,6 +14,12 @@ body {
     width: 100%;
     height: auto;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:  rgba(255, 121, 120, 0.7);
 }
 
 .wrapper {
@@ -33,6 +39,7 @@ body {
     justify-self: center;
     grid-area: 2 / 2 / span 2 / 3;
     margin: 80px 20px 20px 20px;
+    
 }
 
 .headerTitle {
@@ -42,6 +49,8 @@ body {
     text-align: center;
     margin: 0px 20px 0px 20px;
     padding: 10px 10px 10px 10px;
+    font-size: 22px;
+    color: white;
 }
 
 .headerText {
@@ -51,6 +60,9 @@ body {
     text-align: center;
     margin: 0px 20px 0px 20px;
     padding: 10px 10px 10px 10px;
+    font-size: 13px;
+    color: white;
+    max-width: 400px;
 }
 
 .main {
@@ -68,6 +80,11 @@ body {
     text-align: center;
     margin: 0px 10px 0px 10px;
     padding: 15px 65px 15px 65px;
+    color: white;
+    background-color: rgb(93, 84, 163);
+    box-shadow: 0px 10px rgb(218, 105, 107);
+    border-radius: 10px;
+    font-size: 13px;
 }
 
 .form {
@@ -76,6 +93,7 @@ body {
     justify-self: center;
     text-align: center;
     padding: 10px 10px 10px 10px;
+    
 }
 
 .formList {
@@ -83,6 +101,10 @@ body {
     align-self: center;
     justify-self: center;
     padding: 10px 10px 10px 10px;
+    background-color: white;
+    box-shadow: 0px 10px rgb(218, 105, 107);
+    border-radius: 10px;
+    list-style-type: none;
 }
 
 .nameList {
@@ -96,6 +118,8 @@ body {
     align-self: center;
     justify-self: center;
     padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .surnameList {
@@ -109,6 +133,8 @@ body {
     align-self: center;
     justify-self: center;
     padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .emailList {
@@ -122,6 +148,8 @@ body {
     align-self: center;
     justify-self: center;
     padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .passwordList {
@@ -135,6 +163,8 @@ body {
     align-self: center;
     justify-self: center;
     padding: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .buttonList {
@@ -148,6 +178,13 @@ body {
     align-self: center;
     justify-self: center;
     padding: 20px 45px 20px 45px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: rgb(119, 212, 180);
+    box-shadow: 0px 5px rgb(141, 189, 167);
+    border-radius: 10px;
+    border: none;
 }
 
 .formTermsList {
@@ -155,21 +192,39 @@ body {
     align-self: center;
     justify-self: center;
     padding: 0px 10px 10px 10px;
+    
 }
 
 .formTerms {
     align-self: center;
     justify-self: center;
     padding: 0px 0px 0px 10px;
+    color: gray;
+
 }
 
 .smallText {
     align-self: center;
     justify-self: center;
     padding: 0px 20px 0px 20px;
+    color: gray;
+    font-size: 10px;
 }
 
+.name:active, .surname:active, .email:active, .password:active {
+    color: black;
+    border-color: gray;
+}
 
+.name:hover, .surname:hover, .email:hover, .password:hover {
+    color: black;
+    border-color: gray;
+}
+
+.buttonClaim:hover {
+    cursor: pointer;
+    background-color: rgb(104, 199,158);
+}
 
 /* For mobile phones: */
 
@@ -193,21 +248,48 @@ body {
         height: auto;
         grid-template-columns: repeat(8, auto);
         grid-gap: 24;
+        align-self: center;
+        justify-self: center;
     }
+
+   
 }
 
 /* For desktop: */
 @media only screen and (min-width: 1280dp) {
     .body {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        height: auto;
         background-image: 'url(img/bg-intro-desktop)';
-        align-items: center;
+    
     }
     .wrapper {
         display: grid;
         width: 100%;
         min-height: 200px;
-        grid-template-columns: repeat(12, auto);
+        height: auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
         grid-gap: 24;
+        justify-content: space-between;
+        grid-template-areas: 
+        "           "
+        "header main"
+        "           ";
+    }
+
+    .header {
+        display: grid;
+        grid-area: "header";
+
+    }
+
+    .main {
+        display: grid;
+        grid-area: "main";
+        
     }
    
 } 
